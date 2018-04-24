@@ -1,0 +1,137 @@
+html, body{
+    height: 100%;
+}
+body{
+    background-color:floralwhite;
+    font-family: Verdana, sans-serif;
+}
+header{
+    grid-area: h;
+    background: url(../img/bkground1.jpg);
+    padding: 20px 20px 50px 20px;
+    color:cornsilk;
+} 
+header a{
+    text-decoration:none;
+    font-weight: 600;
+    color:cornsilk; 
+}
+header a:hover{
+    color:black; 
+}
+header h1{
+    color: black;
+}
+p{
+    font-size: 20px;
+    padding-left:40px;
+    padding-right: 40px;
+}
+main{
+    grid-area: m;
+}
+main a{
+    text-decoration:none;
+    font-weight: 600;
+    color: black;
+}
+ul{
+    text-align: left;
+}
+li{
+    list-style: none;
+    float:left;
+    padding-right: 50px;
+    font-weight: 600;
+}
+#IMD{
+    background-color:cornflowerblue; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer{
+    grid-area: f;
+    background: url(../img/bkground1.jpg);
+    color: cornsilk;
+    padding: 20px 20px 40px 10px;
+}
+footer a{
+    color:cornsilk;
+    text-decoration: none;
+    font-weight: 600;
+}
+footer a:hover{
+    color:black; 
+}
+footer ul li{
+    padding-right: 20px;
+}
+h1{
+   padding-left: 10px; 
+}
+h2{
+    padding-left: 20px;
+}
+#album p, #poster p, #logo p{
+    text-align: center;
+}
+#posterimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+}
+#albumimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+}
+figure{
+    padding-top:20px;
+    padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+.grid-container{
+          display: grid;
+            height: 100%;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 120px  auto 100px;
+    
+          grid-template-areas:
+            'h h h h h h h h h h h h'
+            'm m m m m m m m m m m m'
+            'f f f f f f f f f f f f';
+          grid-gap: 10px;
+          background-attachment: none;
+          padding: 10px;
+            
+        }
+@media (min-width: 0px) and (max-width: 640px) {
+    #logo{
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+    }
+    #albumimg{
+        width:60%;
+    }
+    #posterimg{
+        width: 60%
+    }
+    #logo img{
+        width: 50%;
+        padding-bottom: 15px;
+    }
+    header ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li{
+        padding-bottom: 10px;
+    }
+    
+}
+
