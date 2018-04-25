@@ -45,7 +45,7 @@ li{
     padding-right: 50px;
     font-weight: 600;
 }
-#IMD{
+#IMD, #MDV{
     background-color:cornflowerblue; 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -70,8 +70,12 @@ footer ul li{
 h1{
    padding-left: 10px; 
 }
-h2{
+h3{
     padding-left: 20px;
+}
+main h2{
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 #album p, #poster p, #logo p{
     text-align: center;
@@ -99,7 +103,7 @@ figure{
           display: grid;
             height: 100%;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: 200px  auto 100px;
+            grid-template-rows: 240px  auto 100px;
     
           grid-template-areas:
             'h h h h h h h h h h h h'
@@ -111,7 +115,7 @@ figure{
             
         }
 @media (min-width: 0px) and (max-width: 640px) {
-    #logo{
+    #logoImages{
         display:flex;
         align-items:center;
         flex-direction: column;
@@ -135,14 +139,16 @@ figure{
     header ul li{
         padding-bottom: 10px;
     }
+    header h1.heading{
+        font-size: 25px;
+    }
     
 }
 @media (min-width: 641px) and (max-width: 960px) {
-    #logo{
+    #logoImages{
         display:flex;
         align-items:center;
         flex-direction: column;
-        justify-content: space-around;
     }
     #albumimg{
         width:60%;
@@ -161,6 +167,18 @@ figure{
     }
     header ul li{
         padding-bottom: 10px;
+    }
+    #logo p{
+        width:100%;
+    }
+    
+}
+@media (min-width: 961px){
+    #logoImages{
+        display:flex;
+        align-items:center;
+        flex-direction: row;
+        justify-content: space-around;
     }
     
 }
