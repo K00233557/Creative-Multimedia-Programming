@@ -145,6 +145,10 @@ figure{
     header h1.heading{
         font-size: 25px;
     }
+    iframe{
+        display: flex;
+        width: 100%;
+    }
     
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -173,6 +177,10 @@ figure{
     #logo p{
         width:100%;
     }
+    iframe{
+        display: flex;
+        width: 100%;
+    }
     
 }
 @media (min-width: 961px){
@@ -185,6 +193,10 @@ figure{
     header ul{
         display:flex;
         flex-direction: row;
+    }
+    iframe{
+        display: flex;
+        width: 100%;
     }
     
 }
